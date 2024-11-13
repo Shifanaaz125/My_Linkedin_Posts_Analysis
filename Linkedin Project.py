@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Project Summary: LinkedIn Post Analytics
+#Project Summary: LinkedIn Post Analytics
 # 
 
 # ### Objective: *To analyze LinkedIn post engagement and reach by consolidating data from multiple Excel sheets into a single dataset for comprehensive analysis.*
