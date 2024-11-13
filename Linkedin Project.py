@@ -1,29 +1,23 @@
-#!/usr/bin/env python
-# coding: utf-8
 
-#Project Summary: LinkedIn Post Analytics
-# 
+Project Summary: LinkedIn Post Analytics
 
-# ### Objective: *To analyze LinkedIn post engagement and reach by consolidating data from multiple Excel sheets into a single dataset for comprehensive analysis.*
+Objective: To analyze LinkedIn post engagement and reach by consolidating data from multiple Excel sheets into a single dataset for comprehensive analysis.*
 
-# ##### Data Source: LinkedIn posts data downloaded as 89 separate Excel sheets.
-# ##### Task: Merge all 89 Excel sheets into a single consolidated sheet for easier analysis.
-# ##### Tools: Python for data merging and Excel for final data review.
-# ##### Outcome: A unified dataset that facilitates the analysis of post performance, engagement metrics, and reach, helping to identify which types of posts resonate best with the audience.
-# 
+Data Source: LinkedIn posts data downloaded as 89 separate Excel sheets.
+Task: Merge all 89 Excel sheets into a single consolidated sheet for easier analysis.
+Tools: Python for data merging and Excel for final data review.
+Outcome: A unified dataset that facilitates the analysis of post-performance, engagement metrics, and reach, helping to identify which types of posts resonate best with the audience.
 
-# # Methodolgy
 
-# ### Steps Taken:
-# **Downloaded Data: Collected 92 different Excel sheets containing data for individual LinkedIn posts.**
-# 
-# **Python Code: Utilized Python to merge all Excel files into a single consolidated sheet.**
-# 
-# **Excel: Preperocess the data to analys it.**
-# 
-# **Analysis: Plan to use the unified dataset to analyze engagement patterns and optimize post strategies.**
+Methodology
 
-# In[2]:
+Steps Taken:
+1. Downloaded Data: Collected 92 different Excel sheets containing data for individual LinkedIn posts.
+2. Python Code: Utilized Python to merge all Excel files into a single consolidated sheet.
+3. Excel: Preprocess the data to analyze it.
+4. Analysis: Plan to use the unified dataset to analyze engagement patterns and optimize post strategies.**
+
+
 
 
 import pandas as pd
@@ -49,25 +43,13 @@ combined_df = pd.concat(df_list, ignore_index=True)
 combined_df.to_excel('consolidated_data.xlsx', index=False)
 
 
-# In[2]:
-
-
 combined_df.head(20)
-
-
-# In[11]:
 
 
 df = pd.read_excel(r'C:\Users\Shifa\OneDrive\Resume\Linkedin post Analysis\consolidated_data.xlsx')
 
 
-# In[12]:
-
-
 df.shape
-
-
-# In[13]:
 
 
 print(df)
@@ -79,10 +61,7 @@ print('Information:')
 df.info()
 
 
-# ### Data Restructure and Saving file in local Machine ###
-# 
-
-# In[6]:
+Data Restructure and Saving file in local machine. 
 
 
 import pandas as pd
@@ -191,9 +170,6 @@ df_transposed.to_excel(r'C:\Users\Shifa\OneDrive\Resume\Linkedin post Analysis\t
 
 
 print(df_transposed.shape)  # (rows, columns)
-
-
-# In[ ]:
 
 
 
